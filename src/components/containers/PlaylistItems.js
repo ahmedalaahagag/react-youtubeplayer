@@ -3,9 +3,9 @@ import PlaylistItem from "../PlaylistItem";
 import StyledPlaylistitems from "../styles/StyledPlaylistitems";
 import withLink from "../hoc/withLink";
 
+const PlaylistItemWithLink = withLink(PlaylistItem);
 
 const PlaylistItems = ({videos, active}) => {
-    const PlaylistItemWithLink = withLink(PlaylistItem);
 
     return (
         <StyledPlaylistitems>

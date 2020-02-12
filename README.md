@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 A Simple function based `Video Playlist player` app using hooks (useEffect,useState) and styled components. 
 Potential updates can be found within the todo file. 
 

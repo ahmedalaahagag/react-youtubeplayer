@@ -39,7 +39,7 @@ const HgoPlayer = (props) => {
         const videoId = props.match.params.activeVideo;
         if (videoId !== undefined) {
             const newActiveVideo = state.videos.findIndex(
-                video => video.id = videoId
+                video => video.id === videoId
             );
             setState(prev => ({
                 ...prev,
@@ -52,7 +52,7 @@ const HgoPlayer = (props) => {
                 autoplay: false
             })
         }
-    }, [props.history, props.location.autoplay, props.match.params.activeVideo, state.videos]);
+    }, [props.history, props.location.autoplay, props.match.params.activeVideo, state.activeVideo.id, state.videos]);
 
     const nightModeCallback = () => {
         setState(prevState => ({
